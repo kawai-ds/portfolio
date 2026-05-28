@@ -264,6 +264,22 @@ h2 {
   margin-bottom: 0;
 }
 
+.about-line {
+  display: block;
+}
+
+.about__tools {
+  margin-top: 1.35em;
+}
+
+.about__text .tool-text {
+  margin: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 .contact {
   background: var(--paper);
 }
@@ -436,7 +452,7 @@ h2 {
   }
 
   .about__text {
-    width: min(560px, 100%);
+    width: min(620px, 100%);
     margin: 0 auto;
   }
 }
@@ -494,12 +510,19 @@ h2 {
     margin-bottom: 14px;
   }
 
-  .about__text br {
-    display: none;
+  .about__text {
+    max-width: none;
+    line-height: 1.85;
+    text-wrap: pretty;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
-  .about__tools br {
-    display: block;
+  .about__text p,
+  .about__tools {
+    text-wrap: pretty;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   .contact p {
