@@ -7,8 +7,8 @@
   --sage: #9aa89b;
   --white: #fffaf7;
   --line: rgba(177, 160, 154, 0.32);
-  --body-copy-size: clamp(1rem, 1.42vw, 1.42rem);
-  --body-copy-line: 1.9;
+  --body-copy-size: clamp(0.94rem, 1.28vw, 1.16rem);
+  --body-copy-line: 1.82;
   --body-copy-weight: 500;
   --body-copy-spacing: 0.02em;
   --body-copy-color: #4f4d4b;
@@ -243,15 +243,17 @@ h2 {
 
 .about__name span {
   display: block;
-  font-size: clamp(1rem, 1.55vw, 1.35rem);
-  font-weight: 300;
-  line-height: 1.75;
+  color: var(--body-copy-color);
+  font-size: var(--body-copy-size);
+  font-weight: var(--body-copy-weight);
+  line-height: var(--body-copy-line);
+  letter-spacing: var(--body-copy-spacing);
 }
 
 .about__text {
   padding-top: clamp(4px, 0.8vw, 10px);
   color: var(--body-copy-color);
-  font-size: clamp(0.98rem, 1.24vw, 1.22rem);
+  font-size: var(--body-copy-size);
   font-weight: var(--body-copy-weight);
   line-height: var(--body-copy-line);
   letter-spacing: var(--body-copy-spacing);
@@ -401,11 +403,11 @@ h2 {
   .about__text {
     width: auto;
     margin: 0;
-    font-size: clamp(0.95rem, 1.95vw, 1.12rem);
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
   }
 
   .contact p {
-    font-size: clamp(0.95rem, 1.95vw, 1.12rem);
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
   }
 }
 
@@ -522,10 +524,16 @@ h2 {
 
   .about__text {
     max-width: none;
-    line-height: 1.85;
+    font-size: 0.9rem;
+    line-height: 1.78;
     text-wrap: pretty;
     word-break: keep-all;
     overflow-wrap: break-word;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+    line-height: 1.78;
   }
 
   .about__text p,
