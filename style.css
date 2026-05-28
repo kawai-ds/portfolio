@@ -252,6 +252,7 @@ h2 {
 
 .about__text {
   padding-top: clamp(4px, 0.8vw, 10px);
+  justify-self: end;
   color: var(--body-copy-color);
   font-size: var(--body-copy-size);
   font-weight: var(--body-copy-weight);
@@ -401,8 +402,8 @@ h2 {
   }
 
   .about__text {
-    width: auto;
-    margin: 0;
+    width: min(360px, 100%);
+    margin: 0 auto;
     font-size: 15px;
   }
 
@@ -412,6 +413,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  h2 {
+    font-size: clamp(1.85rem, 8vw, 2.25rem);
+  }
+
   .works .section__heading--row {
     display: flex;
     width: 100%;
@@ -425,7 +430,6 @@ h2 {
   .works .section__heading--row h2 {
     flex: 1 1 auto;
     margin: 0;
-    font-size: clamp(1.85rem, 8vw, 2.25rem);
   }
 
   .works .button {
@@ -470,7 +474,7 @@ h2 {
   }
 
   h2 {
-    font-size: clamp(2rem, 10vw, 2.45rem);
+    font-size: clamp(1.85rem, 8vw, 2.25rem);
     letter-spacing: 0.01em;
   }
 
@@ -523,6 +527,8 @@ h2 {
   }
 
   .about__text {
+    width: min(92%, 360px);
+    margin: 0 auto;
     max-width: none;
     font-size: 14px;
     line-height: 1.82;
