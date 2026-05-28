@@ -2,9 +2,11 @@
   --text: #4f4d4b;
   --muted: #d9cdca;
   --paper: #f8f4f2;
+  --outside: #d9c8c3;
   --rose: #d9c8c3;
   --sage: #9aa89b;
   --white: #fffaf7;
+  --line: rgba(177, 160, 154, 0.32);
   --body-copy-size: clamp(1rem, 1.42vw, 1.42rem);
   --body-copy-line: 1.9;
   --body-copy-weight: 500;
@@ -25,7 +27,7 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  background: var(--paper);
+  background: var(--outside);
   font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-weight: 400;
   line-height: 1.8;
@@ -59,6 +61,8 @@ main {
 }
 
 .section {
+  background: var(--paper);
+  border-top: 1px solid var(--line);
   padding: clamp(56px, 7.2vw, 92px) 0;
 }
 
@@ -70,9 +74,10 @@ main {
 h2 {
   margin: 0;
   color: rgba(215, 201, 198, 0.88);
-  font-size: clamp(2.5rem, 4.4vw, 4rem);
+  font-size: clamp(2.15rem, 3.65vw, 3.35rem);
   font-weight: 800;
   line-height: 1;
+  letter-spacing: 0.01em;
 }
 
 .section__heading--row {
@@ -198,11 +203,7 @@ h2 {
 }
 
 .about {
-  background: var(--rose);
-}
-
-.about h2 {
-  color: rgba(255, 255, 255, 0.84);
+  background: var(--paper);
 }
 
 .about__inner {
@@ -327,10 +328,13 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: var(--site-max);
   min-height: 72px;
+  margin: 0 auto;
   padding: 18px 96px;
+  border-top: 1px solid var(--line);
   color: rgba(82, 74, 70, 0.76);
-  background: var(--rose);
+  background: var(--paper);
   font-size: 0.85rem;
 }
 
@@ -352,7 +356,7 @@ h2 {
   height: 34px;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(82, 74, 70, 0.58);
 }
 
 .footer__social svg,
@@ -371,7 +375,8 @@ h2 {
 
 .footer__social img {
   display: block;
-  opacity: 0.88;
+  filter: brightness(0);
+  opacity: 0.34;
 }
 
 @media (max-width: 900px) {
@@ -418,7 +423,7 @@ h2 {
   .works .section__heading--row h2 {
     flex: 1 1 auto;
     margin: 0;
-    font-size: clamp(2rem, 9vw, 2.5rem);
+    font-size: clamp(1.85rem, 8vw, 2.25rem);
   }
 
   .works .button {
@@ -460,6 +465,11 @@ h2 {
 @media (max-width: 560px) {
   .section {
     padding: 54px 0;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 2.45rem);
+    letter-spacing: 0.01em;
   }
 
   .section__inner {
