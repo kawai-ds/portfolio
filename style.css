@@ -498,6 +498,10 @@ h2 {
     display: none;
   }
 
+  .about__tools br {
+    display: block;
+  }
+
   .contact p {
     margin-left: 0;
   }
