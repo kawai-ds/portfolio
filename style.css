@@ -10,8 +10,8 @@
   --body-copy-weight: 500;
   --body-copy-spacing: 0.02em;
   --body-copy-color: #4f4d4b;
-  --site-max: 1180px;
-  --content-max: 900px;
+  --site-max: 1100px;
+  --content-max: 860px;
 }
 
 * {
@@ -63,7 +63,7 @@ main {
 }
 
 .section__inner {
-  width: min(var(--content-max), calc(100% - 112px));
+  width: min(var(--content-max), calc(100% - 104px));
   margin: 0 auto;
 }
 
