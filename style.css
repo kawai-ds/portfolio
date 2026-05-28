@@ -527,7 +527,7 @@ h2 {
   }
 
   .about__text {
-    width: min(98%, 384px);
+    width: min(100%, 392px);
     margin: 0 auto;
     max-width: none;
     font-size: 14px;
