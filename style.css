@@ -10,8 +10,8 @@
   --body-copy-weight: 500;
   --body-copy-spacing: 0.02em;
   --body-copy-color: #4f4d4b;
-  --content-max: 930px;
-  --visual-max: 1280px;
+  --site-max: 1180px;
+  --content-max: 900px;
 }
 
 * {
@@ -42,8 +42,13 @@ a {
   text-decoration: none;
 }
 
+main {
+  max-width: var(--site-max);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .fv {
-  max-width: var(--visual-max);
   margin: 0 auto;
 }
 
@@ -58,7 +63,7 @@ a {
 }
 
 .section__inner {
-  width: min(var(--content-max), calc(100% - 120px));
+  width: min(var(--content-max), calc(100% - 112px));
   margin: 0 auto;
 }
 
