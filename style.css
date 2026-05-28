@@ -7,8 +7,8 @@
   --sage: #9aa89b;
   --white: #fffaf7;
   --line: rgba(177, 160, 154, 0.32);
-  --body-copy-size: clamp(0.94rem, 1.28vw, 1.16rem);
-  --body-copy-line: 1.82;
+  --body-copy-size: 15px;
+  --body-copy-line: 1.86;
   --body-copy-weight: 500;
   --body-copy-spacing: 0.02em;
   --body-copy-color: #4f4d4b;
@@ -403,11 +403,11 @@ h2 {
   .about__text {
     width: auto;
     margin: 0;
-    font-size: clamp(0.9rem, 1.8vw, 1rem);
+    font-size: 15px;
   }
 
   .contact p {
-    font-size: clamp(0.9rem, 1.8vw, 1rem);
+    font-size: 15px;
   }
 }
 
@@ -524,16 +524,16 @@ h2 {
 
   .about__text {
     max-width: none;
-    font-size: 0.9rem;
-    line-height: 1.78;
+    font-size: 14px;
+    line-height: 1.82;
     text-wrap: pretty;
     word-break: keep-all;
     overflow-wrap: break-word;
   }
 
   .contact p {
-    font-size: 0.9rem;
-    line-height: 1.78;
+    font-size: 14px;
+    line-height: 1.82;
   }
 
   .about__text p,
