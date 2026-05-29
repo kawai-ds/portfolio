@@ -535,11 +535,11 @@ h2 {
 
   .fv {
     background: var(--paper);
-    padding: 18px 18px 28px;
+    padding: 18px 24px 24px;
   }
 
   .fv__sp img {
-    width: min(100%, 430px);
+    width: min(94%, 404px);
     height: auto;
     margin: 0 auto;
   }
