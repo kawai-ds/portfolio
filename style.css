@@ -54,7 +54,11 @@ main {
   margin: 0 auto;
 }
 
-.fv img {
+.fv__sp {
+  display: none;
+}
+
+.fv__pc img {
   display: block;
   width: 100%;
   height: auto;
@@ -122,9 +126,7 @@ h2 {
 }
 
 .work-card {
-  position: relative;
-  aspect-ratio: 1.26 / 1;
-  overflow: hidden;
+  display: block;
   background: #f1ebe8;
   border: 0;
   box-shadow: 0 1px 8px rgba(92, 84, 79, 0.08);
@@ -133,13 +135,20 @@ h2 {
   padding: 0;
 }
 
-.work-card img {
+.work-card__image {
+  position: relative;
+  display: block;
+  aspect-ratio: 1.26 / 1;
+  overflow: hidden;
+}
+
+.work-card__image img {
   height: 100%;
   object-fit: cover;
   transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), filter 0.55s ease;
 }
 
-.work-card--logo img {
+.work-card--logo .work-card__image img {
   object-fit: contain;
   padding: 8%;
 }
@@ -179,9 +188,13 @@ h2 {
   text-transform: uppercase;
 }
 
-.work-card:hover img,
-.work-card:focus img,
-.work-card:focus-visible img {
+.work-card__mobile {
+  display: none;
+}
+
+.work-card:hover .work-card__image img,
+.work-card:focus .work-card__image img,
+.work-card:focus-visible .work-card__image img {
   filter: brightness(0.96);
   transform: scale(1.045);
 }
@@ -417,6 +430,45 @@ h2 {
     font-size: clamp(1.85rem, 8vw, 2.25rem);
   }
 
+  .work-card {
+    background: transparent;
+    box-shadow: none;
+    text-align: left;
+  }
+
+  .work-card__image {
+    background: #f1ebe8;
+    box-shadow: 0 1px 8px rgba(92, 84, 79, 0.08);
+  }
+
+  .work-card__overlay {
+    display: none;
+  }
+
+  .work-card__mobile {
+    display: block;
+    margin-top: 8px;
+    color: var(--body-copy-color);
+    line-height: 1.55;
+  }
+
+  .work-card__mobile-title,
+  .work-card__mobile-category {
+    display: block;
+  }
+
+  .work-card__mobile-title {
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  .work-card__mobile-category {
+    margin-top: 2px;
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    color: rgba(79, 77, 75, 0.72);
+  }
+
   .works .section__heading--row {
     display: flex;
     width: 100%;
@@ -469,6 +521,46 @@ h2 {
 }
 
 @media (max-width: 560px) {
+  .fv__pc {
+    display: none;
+  }
+
+  .fv__sp {
+    display: flex;
+    min-height: 560px;
+    align-items: flex-start;
+    background:
+      linear-gradient(90deg, rgba(232, 223, 218, 0.9) 0%, rgba(232, 223, 218, 0.62) 48%, rgba(255, 255, 255, 0.1) 100%),
+      url("images/fv-sp-bg.png") 56% center / cover no-repeat;
+    padding: 42px 28px;
+  }
+
+  .fv__sp-copy {
+    width: min(330px, 100%);
+    color: var(--text);
+  }
+
+  .fv__sp-brand {
+    margin: 0 0 72px;
+    font-size: 1.12rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+  }
+
+  .fv__sp h1 {
+    margin: 0;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
+    font-size: clamp(2.1rem, 10vw, 3rem);
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .fv__sp-lead {
+    margin: 42px 0 0 8px;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
   .section {
     padding: 54px 0;
   }
