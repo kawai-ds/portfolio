@@ -526,11 +526,22 @@ h2 {
 
 @media (max-width: 768px) {
   .fv__pc {
-    display: none;
+    display: none !important;
   }
 
   .fv__sp {
     display: block;
+  }
+
+  .fv {
+    background: var(--paper);
+    padding: 18px 18px 28px;
+  }
+
+  .fv__sp img {
+    width: min(100%, 430px);
+    height: auto;
+    margin: 0 auto;
   }
 }
 
