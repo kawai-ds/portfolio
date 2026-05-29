@@ -429,11 +429,7 @@ h2 {
   }
 }
 
-@media (max-width: 768px) {
-  h2 {
-    font-size: clamp(1.85rem, 8vw, 2.25rem);
-  }
-
+@media (max-width: 1023px) {
   .work-card {
     background: transparent;
     box-shadow: none;
@@ -503,6 +499,12 @@ h2 {
   }
 }
 
+@media (max-width: 768px) {
+  h2 {
+    font-size: clamp(1.85rem, 8vw, 2.25rem);
+  }
+}
+
 @media (max-width: 680px) {
   .works__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -524,7 +526,7 @@ h2 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .fv__pc {
     display: none !important;
   }
