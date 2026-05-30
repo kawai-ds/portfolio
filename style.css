@@ -660,3 +660,44 @@ h2 {
     margin: 0;
   }
 }
+
+@media (max-width: 1024px), (hover: none) and (pointer: coarse) {
+  .work-card {
+    background: transparent;
+    box-shadow: none;
+    text-align: left;
+  }
+
+  .work-card__image {
+    background: #f1ebe8;
+    box-shadow: 0 1px 8px rgba(92, 84, 79, 0.08);
+  }
+
+  .work-card__overlay {
+    display: none;
+  }
+
+  .work-card__mobile {
+    display: block;
+    margin-top: 8px;
+    color: var(--body-copy-color);
+    line-height: 1.55;
+  }
+
+  .work-card__mobile-title,
+  .work-card__mobile-category {
+    display: block;
+  }
+
+  .work-card__mobile-title {
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  .work-card__mobile-category {
+    margin-top: 2px;
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    color: rgba(79, 77, 75, 0.72);
+  }
+}
