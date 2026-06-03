@@ -61,14 +61,16 @@ main {
 
 .fv__scene {
   position: relative;
-  aspect-ratio: 2752 / 1536;
+  aspect-ratio: 2752 / 1608;
   overflow: hidden;
 }
 
 .fv__layer {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
 }
 
 .fv__copy {
