@@ -14,12 +14,30 @@
 </head>
 <body>
   <main>
-    <section class="fv" id="top">
-      <div class="fv__pc">
-        <img src="images/fv.jpg" alt="Kawai Design Studio 女性向けのシンプルで柔らかいデザインを。">
+    <section class="fv fv-animate" id="top" aria-label="Kawai Design Studio 大切なお店の想いを形に。やさしく伝わるデザインを。">
+      <div class="fv__pc" aria-hidden="true">
+        <div class="fv__scene">
+          <img class="fv__layer fv__layer--bg" src="images/fv-pc-bg.png" alt="" data-fv-step>
+          <div class="fv__copy">
+            <p class="fv__brand" data-fv-step>Kawai Design Studio</p>
+            <h1 class="fv__main-copy" data-fv-step>大切なお店の想いを<span>形</span>に。<br>やさしく伝わるデザインを。</h1>
+            <p class="fv__sub-copy" data-fv-step>ホームページ・ロゴ・チラシなど<br>お店の魅力が伝わるデザインを制作します。</p>
+          </div>
+        </div>
       </div>
       <div class="fv__sp">
-        <img src="images/fv-sp.jpg" alt="Kawai Design Studio 女性向けのシンプルで柔らかいデザインを。">
+        <div class="fv__sp-scene" aria-hidden="true">
+          <div class="fv__sp-image" data-fv-step>
+            <img class="fv__sp-bg" src="images/fv-sp-bg.png" alt="">
+          </div>
+          <div class="fv__sp-copy fv__sp-copy--top">
+            <p class="fv__sp-brand" data-fv-step>Kawai Design Studio</p>
+            <p class="fv__sp-main-copy" data-fv-step>大切なお店の想いを<span>形</span>に。<br>やさしく伝わるデザインを。</p>
+          </div>
+          <div class="fv__sp-copy fv__sp-copy--bottom">
+            <p class="fv__sp-sub-copy" data-fv-step>ホームページ・ロゴ・チラシなど<br>お店の魅力が伝わるデザインを制作します。</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -99,23 +117,21 @@
         </div>
         <div class="about__text">
           <p>
-            <span class="about-line">2026年4月にFammスクールを受講。</span>
-            <span class="about-line">子育てをしながら、Webデザインを学んでいます。</span>
+            <span class="about-line">2026年4月よりWebデザインを学び、</span>
+            <span class="about-line">現在はバナーやホームページ、</span>
+            <span class="about-line">ロゴなどを制作しています。</span>
           </p>
           <p>
-            <span class="about-line">女性向けのシンプルで</span>
-            <span class="about-line">柔らかいデザインが得意です。</span>
+            <span class="about-line">小さなお店やサービスの魅力や想いが、</span>
+            <span class="about-line">見る人に伝わるデザインを大切にしています。</span>
           </p>
           <p>
-            <span class="about-line">バナー制作やLPデザイン、</span>
-            <span class="about-line">HTML/CSSを使用したコーディングを学びながら</span>
-            <span class="about-line">見る人に伝わりやすく</span>
-            <span class="about-line">世界観を大切にしたデザインを制作しています。</span>
+            <span class="about-line">余白・色づかい・視線の流れを意識し、</span>
+            <span class="about-line">想いや魅力が自然と伝わるよう制作しています。</span>
           </p>
           <p>
-            <span class="about-line">「なんとなく可愛い」だけではなく</span>
-            <span class="about-line">ターゲットにしっかり届くデザインを目指し</span>
-            <span class="about-line">配色・余白・視線の流れにもこだわっています。</span>
+            <span class="about-line">パン屋さんやカフェ、子ども向けサービスなど、</span>
+            <span class="about-line">あたたかく親しみやすい雰囲気のデザインが好きです。</span>
           </p>
           <div class="about__tools">
             <p class="tool-text"><span class="nowrap">使用ツール：Photoshop / Illustrator</span></p>
@@ -128,7 +144,10 @@
     <section class="contact section" id="contact">
       <div class="section__inner">
         <h2>CONTACT</h2>
-        <p>制作のご相談は<br>Instagram DMよりお気軽にご連絡ください。<br><a href="https://www.instagram.com/kawai.design.studio/" target="_blank" rel="noopener noreferrer">@kawai.design.studio</a></p>
+        <div class="contact__content">
+          <p><span class="contact__pc-text">ホームページやロゴ制作など、お気軽にご相談ください。</span><span class="contact__sp-text">ホームページやロゴ制作など、<br>お気軽にご相談ください。</span><br>小さなお悩みからでも歓迎しています。</p>
+          <a class="button contact__button" href="https://www.instagram.com/kawai.design.studio/" target="_blank" rel="noopener noreferrer">Instagram DMで相談する</a>
+        </div>
       </div>
     </section>
   </main>
@@ -144,5 +163,7 @@
       </a>
     </div>
   </footer>
+  <button class="page-top" type="button" aria-label="ページトップへ戻る">↑</button>
+  <script src="script.js" defer></script>
 </body>
 </html>
