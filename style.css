@@ -63,6 +63,7 @@ main {
   position: relative;
   aspect-ratio: 2752 / 1536;
   overflow: hidden;
+  container-type: inline-size;
 }
 
 .fv__layer {
@@ -83,7 +84,7 @@ main {
   left: 7.2%;
   margin: 0;
   color: #3f3f3f;
-  font-size: clamp(1.18rem, 2.05vw, 2.08rem);
+  font-size: clamp(1.05rem, 2.6cqw, 1.8rem);
   font-weight: 300;
   letter-spacing: 0.08em;
   line-height: 1.35;
@@ -91,11 +92,11 @@ main {
 
 .fv__main-copy {
   position: absolute;
-  top: 33.9%;
+  top: 34.1%;
   left: 7.2%;
   margin: 0;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
-  font-size: clamp(1.78rem, 2.88vw, 3.08rem);
+  font-size: clamp(1.7rem, 3.55cqw, 2.55rem);
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.75;
@@ -108,10 +109,10 @@ main {
 
 .fv__sub-copy {
   position: absolute;
-  top: 63.4%;
+  top: 63.7%;
   left: 7.3%;
   margin: 0;
-  font-size: clamp(0.98rem, 1.58vw, 1.58rem);
+  font-size: clamp(0.95rem, 1.95cqw, 1.35rem);
   font-weight: 500;
   line-height: 1.75;
   letter-spacing: 0.03em;
