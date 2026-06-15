@@ -1012,6 +1012,103 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .site-header__inner {
+    flex-direction: column;
+    width: calc(100% - 36px);
+    min-height: 0;
+    padding: 9px 0 10px;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  .site-header__brand {
+    width: 170px;
+    transform: translateX(0);
+    justify-content: center;
+  }
+
+  .site-header__nav {
+    justify-content: center;
+    gap: 18px;
+    font-size: 0.76rem;
+    letter-spacing: 0.015em;
+  }
+
+  #works,
+  #about,
+  #contact {
+    scroll-margin-top: 96px;
+  }
+
+  main {
+    padding-top: 90px;
+  }
+
+  .work-detail,
+  .work-detail__body,
+  .work-detail__content,
+  .work-detail__info {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .work-detail .section__inner.work-detail__inner {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+    box-sizing: border-box;
+  }
+
+  .work-detail h1 {
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .work-detail__visual {
+    width: min(100%, 420px);
+  }
+
+  .work-detail__info dl {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .work-detail__info div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 13px 0;
+  }
+
+  .work-detail__info dt {
+    padding-left: 0;
+  }
+
+  .work-detail__info dd,
+  .work-detail__content p,
+  .work-detail__content li {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: normal;
+    line-height: 1.9;
+  }
+
+  .work-detail__content p {
+    padding-left: 0;
+  }
+
+  .work-detail__content ul {
+    max-width: 100%;
+    padding-left: 1.15em;
+    gap: 16px;
+    box-sizing: border-box;
+  }
+
+  .work-detail__content li {
+    padding-left: 0.1em;
+  }
+
   h2 {
     font-size: clamp(1.85rem, 8vw, 2.25rem);
   }
@@ -1084,34 +1181,6 @@ h2 {
 }
 
 @media (max-width: 560px) {
-  .site-header__inner {
-    width: calc(100% - 36px);
-    min-height: 62px;
-    padding: 5px 0;
-    gap: 12px;
-  }
-
-  .site-header__brand {
-    width: 170px;
-    transform: translateX(0);
-  }
-
-  .site-header__nav {
-    gap: 10px;
-    font-size: 0.76rem;
-    letter-spacing: 0.015em;
-  }
-
-  #works,
-  #about,
-  #contact {
-    scroll-margin-top: 72px;
-  }
-
-  main {
-    padding-top: 70px;
-  }
-
   .section {
     padding: 54px 0;
   }
@@ -1239,7 +1308,9 @@ h2 {
   }
 
   .work-detail__inner {
-    width: calc(100% - 36px);
+    width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .work-detail h1 {
@@ -1263,15 +1334,15 @@ h2 {
   .work-detail__content p,
   .work-detail__content li {
     font-size: 14px;
-    line-height: 1.82;
+    line-height: 1.9;
   }
 
   .work-detail__content p {
-    padding-left: 8px;
+    padding-left: 0;
   }
 
   .work-detail__content ul {
-    padding-left: calc(8px + 1.25em);
+    padding-left: 1.15em;
   }
 
   .about__text p,
