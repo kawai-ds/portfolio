@@ -779,6 +779,10 @@ h2 {
   margin-bottom: 0;
 }
 
+.color-sample--podcast {
+  color: #00bbdd;
+}
+
 .work-detail__content ul {
   display: grid;
   gap: 14px;
