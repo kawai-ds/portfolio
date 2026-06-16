@@ -1021,7 +1021,7 @@ h2 {
     flex-direction: row;
     width: calc(100% - 20px);
     min-height: 46px;
-    padding: 2px 0;
+    padding: 3px 0 2px;
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 12px;
@@ -1029,7 +1029,7 @@ h2 {
 
   .site-header__brand {
     width: 96px;
-    transform: translateX(-10px);
+    transform: translateX(-16px);
     justify-content: flex-start;
   }
 
