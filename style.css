@@ -1013,30 +1013,32 @@ h2 {
 
 @media (max-width: 768px) {
   .site-header {
-    border-bottom: 1px solid rgba(220, 205, 201, 0.28);
+    border-bottom: 1px solid rgba(220, 210, 205, 0.5);
     box-shadow: none;
   }
 
   .site-header__inner {
     flex-direction: row;
-    width: calc(100% - 16px);
-    min-height: 54px;
-    padding: 4px 0;
+    width: calc(100% - 20px);
+    min-height: 46px;
+    padding: 2px 0;
     justify-content: space-between;
+    flex-wrap: nowrap;
     gap: 12px;
   }
 
   .site-header__brand {
-    width: 104px;
-    transform: translateX(-12px);
+    width: 96px;
+    transform: translateX(-10px);
     justify-content: flex-start;
   }
 
   .site-header__nav {
     flex: 0 1 auto;
     justify-content: flex-end;
-    gap: 13px;
-    font-size: 12px;
+    flex-wrap: nowrap;
+    gap: 11px;
+    font-size: 11.5px;
     letter-spacing: 0.01em;
     white-space: nowrap;
   }
@@ -1048,7 +1050,7 @@ h2 {
   }
 
   main {
-    padding-top: 54px;
+    padding-top: 46px;
   }
 
   .work-detail,
@@ -1382,6 +1384,22 @@ h2 {
     width: 40px;
     height: 40px;
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header__inner {
+    width: calc(100% - 20px);
+    gap: 8px;
+  }
+
+  .site-header__brand {
+    width: 92px;
+  }
+
+  .site-header__nav {
+    gap: 9px;
+    font-size: 11px;
   }
 }
 
