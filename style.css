@@ -1119,17 +1119,17 @@ h2 {
     overflow-wrap: normal;
     word-break: normal;
     line-break: strict;
-    line-height: 1.82;
+    line-height: 1.8;
   }
 
   .work-detail__content p {
-    padding-left: 18px;
+    padding-left: 24px;
   }
 
   .work-detail__content ul {
     max-width: 100%;
     padding-left: calc(16px + 1em);
-    gap: 13px;
+    gap: 10px;
     box-sizing: border-box;
   }
 
@@ -1384,14 +1384,14 @@ h2 {
 
   .work-detail__content li {
     font-size: 14px;
-    line-height: 1.82;
+    line-height: 1.8;
     overflow-wrap: normal;
     word-break: normal;
     line-break: strict;
   }
 
   .work-detail__content p {
-    padding-left: 16px;
+    padding-left: 22px;
   }
 
   .work-detail__content ul {
