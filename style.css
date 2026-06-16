@@ -1012,26 +1012,33 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .site-header {
+    border-bottom: 1px solid rgba(220, 205, 201, 0.28);
+    box-shadow: none;
+  }
+
   .site-header__inner {
-    flex-direction: column;
-    width: calc(100% - 36px);
-    min-height: 0;
-    padding: 9px 0 10px;
-    justify-content: center;
-    gap: 7px;
+    flex-direction: row;
+    width: calc(100% - 16px);
+    min-height: 54px;
+    padding: 4px 0;
+    justify-content: space-between;
+    gap: 12px;
   }
 
   .site-header__brand {
-    width: 170px;
-    transform: translateX(0);
-    justify-content: center;
+    width: 104px;
+    transform: translateX(-12px);
+    justify-content: flex-start;
   }
 
   .site-header__nav {
-    justify-content: center;
-    gap: 18px;
-    font-size: 0.76rem;
-    letter-spacing: 0.015em;
+    flex: 0 1 auto;
+    justify-content: flex-end;
+    gap: 13px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
   }
 
   #works,
@@ -1041,7 +1048,7 @@ h2 {
   }
 
   main {
-    padding-top: 90px;
+    padding-top: 54px;
   }
 
   .work-detail,
@@ -1150,7 +1157,8 @@ h2 {
     background: var(--paper);
     height: auto;
     min-height: 0;
-    padding: 6px 12px 0;
+    margin-top: 2px;
+    padding: 10px 12px 0;
   }
 
   .fv__sp-scene {
