@@ -742,6 +742,28 @@ h2 {
   margin: 0;
 }
 
+.work-detail__source {
+  white-space: nowrap;
+}
+
+.work-detail__source-break {
+  display: none;
+}
+
+.work-detail__source-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(79, 77, 75, 0.34);
+  text-underline-offset: 0.18em;
+  transition: opacity 0.4s ease, text-decoration-color 0.4s ease;
+}
+
+.work-detail__source-link:hover,
+.work-detail__source-link:focus-visible {
+  opacity: 0.72;
+  text-decoration-color: rgba(79, 77, 75, 0.54);
+}
+
 .work-detail__content section {
   margin-bottom: clamp(38px, 5vw, 54px);
 }
@@ -1112,6 +1134,18 @@ h2 {
     padding-left: 40px;
     margin-top: 0;
     line-height: 1.6;
+  }
+
+  .work-detail__source {
+    white-space: normal;
+  }
+
+  .work-detail__source-space {
+    display: none;
+  }
+
+  .work-detail__source-break {
+    display: block;
   }
 
   .work-detail__content li {
