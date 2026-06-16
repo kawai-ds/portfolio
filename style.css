@@ -1070,6 +1070,11 @@ h2 {
     box-sizing: border-box;
   }
 
+  .work-detail__body .section__inner.work-detail__inner {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
   .work-detail h1 {
     white-space: normal;
     overflow-wrap: break-word;
@@ -1086,31 +1091,45 @@ h2 {
 
   .work-detail__info div {
     grid-template-columns: 1fr;
-    gap: 4px;
-    padding: 13px 0;
+    gap: 0;
+    padding: 10px 0;
   }
 
   .work-detail__info dt {
-    padding-left: 0;
+    padding-left: 22px;
+    line-height: 1.6;
   }
 
   .work-detail__info dd,
-  .work-detail__content p,
-  .work-detail__content li {
+  .work-detail__content p {
     max-width: 100%;
     overflow-wrap: break-word;
     word-break: normal;
-    line-height: 1.9;
+    line-height: 1.78;
+  }
+
+  .work-detail__info dd {
+    padding-left: 40px;
+    margin-top: 0;
+    line-height: 1.6;
+  }
+
+  .work-detail__content li {
+    max-width: 100%;
+    overflow-wrap: normal;
+    word-break: normal;
+    line-break: strict;
+    line-height: 1.82;
   }
 
   .work-detail__content p {
-    padding-left: 0;
+    padding-left: 22px;
   }
 
   .work-detail__content ul {
     max-width: 100%;
-    padding-left: 1.15em;
-    gap: 16px;
+    padding-left: calc(22px + 1em);
+    gap: 13px;
     box-sizing: border-box;
   }
 
@@ -1323,6 +1342,11 @@ h2 {
     padding-left: 24px;
   }
 
+  .work-detail__body .work-detail__inner {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
   .work-detail h1 {
     font-size: 1.28rem;
     line-height: 1.62;
@@ -1335,24 +1359,42 @@ h2 {
 
   .work-detail__info div {
     grid-template-columns: 1fr;
-    gap: 4px;
-    padding: 13px 0;
+    gap: 0;
+    padding: 10px 0;
   }
 
   .work-detail__info dt,
   .work-detail__info dd,
-  .work-detail__content p,
+  .work-detail__content p {
+    font-size: 14px;
+    line-height: 1.78;
+  }
+
+  .work-detail__info dt {
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+
+  .work-detail__info dd {
+    padding-left: 38px;
+    margin-top: 0;
+    line-height: 1.6;
+  }
+
   .work-detail__content li {
     font-size: 14px;
-    line-height: 1.9;
+    line-height: 1.82;
+    overflow-wrap: normal;
+    word-break: normal;
+    line-break: strict;
   }
 
   .work-detail__content p {
-    padding-left: 0;
+    padding-left: 20px;
   }
 
   .work-detail__content ul {
-    padding-left: 1.15em;
+    padding-left: calc(20px + 1em);
   }
 
   .about__text p,
