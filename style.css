@@ -1093,7 +1093,7 @@ h2 {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 22px;
-    background: var(--outside);
+    background-color: var(--outside);
     border-left: 1px solid rgba(220, 205, 201, 0.58);
     box-shadow: -14px 18px 34px rgba(82, 74, 70, 0.12);
     color: var(--accent-soft);
@@ -1133,9 +1133,10 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 18px;
+    width: 16px;
+    margin: 0;
     transform: translate(-50%, -50%) rotate(45deg);
-    transform-origin: center;
+    transform-origin: center center;
   }
 
   .site-header.is-menu-open .site-header__toggle span:nth-child(2) {
@@ -1146,9 +1147,10 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 18px;
+    width: 16px;
+    margin: 0;
     transform: translate(-50%, -50%) rotate(-45deg);
-    transform-origin: center;
+    transform-origin: center center;
   }
 
   #works,
