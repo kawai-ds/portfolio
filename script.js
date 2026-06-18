@@ -1,4 +1,44 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // FV main copy character animation
+  document.querySelectorAll(".fv__main-copy, .fv__sp-main-copy").forEach((copy) => {
+    let charIndex = 0;
+
+    const wrapTextNode = (node) => {
+      const fragment = document.createDocumentFragment();
+
+      Array.from(node.textContent).forEach((char) => {
+        if (char.trim() === "") {
+          fragment.appendChild(document.createTextNode(char));
+          return;
+        }
+
+        const span = document.createElement("span");
+        span.className = "fv__char";
+        span.style.setProperty("--char-index", charIndex);
+        span.textContent = char;
+        fragment.appendChild(span);
+        charIndex += 1;
+      });
+
+      node.replaceWith(fragment);
+    };
+
+    const wrapCharacters = (node) => {
+      Array.from(node.childNodes).forEach((child) => {
+        if (child.nodeType === Node.TEXT_NODE) {
+          wrapTextNode(child);
+          return;
+        }
+
+        if (child.nodeType === Node.ELEMENT_NODE && child.tagName !== "BR") {
+          wrapCharacters(child);
+        }
+      });
+    };
+
+    wrapCharacters(copy);
+  });
+
   const fvSteps = Array.from(document.querySelectorAll(".fv [data-fv-step]")).filter(
     (step) => step.offsetParent !== null
   );
