@@ -4,7 +4,34 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   const revealTargets = document.querySelectorAll(".section");
   const pageTopButton = document.querySelector(".page-top");
+  const siteHeader = document.querySelector(".site-header");
+  const menuToggle = document.querySelector(".site-header__toggle");
+  const siteNav = document.querySelector(".site-header__nav");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Hamburger menu
+  const setMenuOpen = (isOpen) => {
+    if (!siteHeader || !menuToggle) return;
+    siteHeader.classList.toggle("is-menu-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+  };
+
+  menuToggle?.addEventListener("click", () => {
+    setMenuOpen(!siteHeader?.classList.contains("is-menu-open"));
+  });
+
+  siteNav?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setMenuOpen(false));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setMenuOpen(false);
+  });
+
+  window.matchMedia("(min-width: 769px)").addEventListener("change", (event) => {
+    if (event.matches) setMenuOpen(false);
+  });
 
   if (prefersReducedMotion) {
     fvSteps.forEach((step) => step.classList.add("is-visible"));
