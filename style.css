@@ -1096,7 +1096,7 @@ h2 {
     background-color: var(--outside);
     border-left: 1px solid rgba(220, 205, 201, 0.58);
     box-shadow: -14px 18px 34px rgba(82, 74, 70, 0.12);
-    color: var(--accent-soft);
+    color: #F7F2F1;
     font-size: 0.92rem;
     font-weight: 700;
     letter-spacing: 0.07em;
