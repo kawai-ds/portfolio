@@ -586,6 +586,28 @@ h2 {
   transform: translateY(0);
 }
 
+/* WORKS card staggered reveal */
+.work-card.js-card-reveal {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateY(14px);
+  transition: opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1), filter 1.25s cubic-bezier(0.16, 1, 0.3, 1), transform 1.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease;
+  transition-delay: calc(var(--card-index, 0) * 0.14s);
+}
+
+.work-card.js-card-reveal.is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .work-card:hover,
+  .work-card:focus-visible {
+    box-shadow: 0 8px 18px rgba(92, 84, 79, 0.12);
+  }
+}
+
 .about {
   background: var(--paper);
 }
@@ -654,6 +676,20 @@ h2 {
 
 .about-line {
   display: block;
+}
+
+/* ABOUT text reveal */
+.about__text.js-text-reveal {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(10px);
+  transition: opacity 1.8s cubic-bezier(0.22, 1, 0.36, 1), filter 1.8s cubic-bezier(0.22, 1, 0.36, 1), transform 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about__text.js-text-reveal.is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 .about__tools {
@@ -963,8 +999,17 @@ h2 {
   }
 
   .reveal,
+  .work-card.js-card-reveal,
+  .about__text.js-text-reveal,
   .page-top {
     transition: none;
+  }
+
+  .work-card.js-card-reveal,
+  .about__text.js-text-reveal {
+    opacity: 1;
+    filter: none;
+    transform: none;
   }
 }
 
